@@ -3348,7 +3348,7 @@
         CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCXnS5b/9t/8fn1fdF3Uq8y8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxEnemy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABkAAAAZACAYAAAAhDI6nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAP+6SURBVHhe7P0JuGXplpaFZhvZRmR/MiP7vu/7jIzsM082p8tT55ysc6pUOlEQBAURG/QCF0Tu
@@ -17955,4 +17955,7 @@
         AAAAAAAAAAAAAACwbe655/8BNbQQbaigIKUAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="timerEnemy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBoxMyShip = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEnemy = new System.Windows.Forms.PictureBox();
+            this.timerEnemy = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMyShip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemy)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxMyShip
@@ -45,15 +47,21 @@
             this.pictureBoxMyShip.TabIndex = 0;
             this.pictureBoxMyShip.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxEnemy
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(194, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxEnemy.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnemy.Image")));
+            this.pictureBoxEnemy.Location = new System.Drawing.Point(194, 12);
+            this.pictureBoxEnemy.Name = "pictureBoxEnemy";
+            this.pictureBoxEnemy.Size = new System.Drawing.Size(91, 108);
+            this.pictureBoxEnemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEnemy.TabIndex = 1;
+            this.pictureBoxEnemy.TabStop = false;
+            // 
+            // timerEnemy
+            // 
+            this.timerEnemy.Enabled = true;
+            this.timerEnemy.Interval = 10;
+            this.timerEnemy.Tick += new System.EventHandler(this.timerEnemy_Tick);
             // 
             // Form1
             // 
@@ -61,12 +69,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxEnemy);
             this.Controls.Add(this.pictureBoxMyShip);
             this.Name = "Form1";
             this.Text = "Космические войны";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMyShip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemy)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -74,7 +82,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxMyShip;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxEnemy;
+        private System.Windows.Forms.Timer timerEnemy;
     }
 }
 
